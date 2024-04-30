@@ -84,25 +84,29 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Tech Report",
+                to: "/blog/welcome",
+              },
+              {
+                label: "Models' Card",
+                to: "https://huggingface.co/collections/sapienzanlp/minerva-llms-661e6011828fe67de4fe7961",
               },
             ],
           },
           {
-            title: "Community",
+            title: "Sapienza NLP",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Website",
+                href: "https://nlp.uniroma1.it",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "GitHub",
+                href: "https://github.com/SapienzaNLP",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/SapienzaNLP",
               },
             ],
           },
@@ -110,12 +114,8 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
+                label: "About us",
                 to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
