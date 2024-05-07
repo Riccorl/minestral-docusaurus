@@ -115,7 +115,7 @@ const config = {
             items: [
               {
                 label: "About us",
-                to: "/blog",
+                to: "https://nlp.uniroma1.it/people",
               },
             ],
           },
