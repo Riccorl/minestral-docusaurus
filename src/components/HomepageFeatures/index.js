@@ -78,25 +78,20 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="text--center">
           Minerva is the first family of{" "}
-          <b>
-            truly open (data and model) Italian-English LLMs pretrained from
-            scratch
-          </b>{" "}
-          developed by <a href="https://nlp.uniroma1.it/">Sapienza NLP</a> in
-          collaboration with{" "}
+          <b>LLMs pretrained from scratch on Italian</b> developed by{" "}
+          <a href="https://nlp.uniroma1.it/">Sapienza NLP</a> in collaboration
+          with{" "}
           <a href="https://fondazione-fair.it/">
             Future Artificial Intelligence Research (FAIR)
           </a>{" "}
-          and <a href="https://www.cineca.it/">CINECA</a>.{" "}
-          <u>
-            Notably, approximately half of its pretraining data includes Italian
-            text!
-          </u>
+          and <a href="https://www.cineca.it/">CINECA</a>. Notably, the{" "}
+          <u> Minerva models are truly-open </u> (data and model)
+          Italian-English LLMs, with approximately half of the pretraining data
+          including Italian text.
           <br />
           If you want to know more about Minerva check the{" "}
-          <Link to="/blog/welcome">blogtechnical report blog post!</Link>
+          <Link to="/blog/welcome">blog technical report blog post!</Link>
         </div>
-
         <div className="row" style={{ marginTop: "2rem" }}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
