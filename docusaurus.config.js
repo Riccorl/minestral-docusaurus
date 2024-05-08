@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Minerva LLMs",
   tagline: "The first family of Large Language Models pretrained from scratch on Italian!",
-  favicon: "img/favicon.ico",
+  favicon: "img/sapienzanlp-logo-small.png",
 
   // Set the production url of your site here
   url: "https://riccardorlando.xyz/",
@@ -65,7 +65,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/sapienzanlp-social-card.png",
       navbar: {
         title: "Home",
         items: [
