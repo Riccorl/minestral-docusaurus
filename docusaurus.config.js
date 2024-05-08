@@ -8,8 +8,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Minerva Family",
-  tagline: "The first Italian-English LLMs trained from scratch!",
+  title: "Minerva LLMs",
+  tagline: "The first family of Large Language Models pretrained from scratch on Italian!",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -71,8 +71,8 @@ const config = {
         items: [
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
+            href: "https://huggingface.co/collections/sapienzanlp/minerva-llms-661e6011828fe67de4fe7961",
+            label: "Hugging Face",
             position: "right",
           },
         ],
@@ -88,7 +88,7 @@ const config = {
                 to: "/blog/welcome",
               },
               {
-                label: "Models' Card",
+                label: "Model Cards",
                 to: "https://huggingface.co/collections/sapienzanlp/minerva-llms-661e6011828fe67de4fe7961",
               },
             ],

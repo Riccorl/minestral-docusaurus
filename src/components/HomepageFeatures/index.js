@@ -55,6 +55,55 @@ const FeatureList = [
   },
 ];
 
+// A list of newsarticles headlines and links to showcase in the homepage.
+const NewsList = [
+  {
+    img: require("@site/static/img/ansa-logo.png").default,
+    description: (
+      <>
+        <p>
+          <em>"Ecco Minerva, la prima famiglia di LLM addestrati da zero in italiano."</em>
+        </p>
+        <p>
+          <a href="https://www.ansa.it/osservatorio_intelligenza_artificiale/notizie/approfondimenti/2024/04/23/ecco-minerva-la-prima-famiglia-di-llm-addestrati-da-zero-in-italiano_ac6cc4b0-6c65-4cef-a7e3-dfca7bc3c2c4.html">
+            Read more!
+          </a>
+        </p>
+      </>
+    ),
+  },
+  {
+    img: require("@site/static/img/rai-logo.png").default,
+    description: (
+      <>
+        <p>
+          <em>"Minerva, il nuovo modello di intelligenza artificiale con 500 miliardi di parole."</em>
+        </p>
+        <p>
+          <a href="https://www.rainews.it/tgr/lazio/articoli/2024/04/minerva-il-nuovo-modello-di-intelligenza-artificiale-con-500-miliardi-di-parole-46aa10ba-929c-46e9-9469-69b097a26875.html">
+            Read more!
+          </a>
+        </p>
+      </>
+    ),
+  },
+  {
+    img: require("@site/static/img/fair-logo.png").default,
+    description: (
+      <>
+        <p>
+          <em>"AI made in Italy: arriva Minerva, la prima famiglia di grandi modelli linguistici addestrati “da zero” per la lingua italiana."</em>
+        </p>
+        <p>
+          <a href="https://fondazione-fair.it/news/ai-made-in-italy-arriva-minerva-la-prima-famiglia-di-grandi-modelli-linguistici-addestrati-da-zero-per-la-lingua-italiana/">
+            Read more!
+          </a>
+        </p>
+      </>
+    ),
+  },
+];
+
 function Feature({ img, title, description, link }) {
   return (
     <div className={clsx("col col--4")}>
@@ -84,16 +133,33 @@ export default function HomepageFeatures() {
           <a href="https://fondazione-fair.it/">
             Future Artificial Intelligence Research (FAIR)
           </a>{" "}
-          and <a href="https://www.cineca.it/">CINECA</a>. Notably, the{" "}
+          and <a href="https://www.cineca.it/">CINECA</a>. The{" "}
           <u> Minerva models are truly-open </u> (data and model)
           Italian-English LLMs, with approximately half of the pretraining data
-          including Italian text.
-          <br />
-          If you want to know more about Minerva check the{" "}
-          <Link to="/blog/welcome">blog technical report blog post!</Link>
+          composed of Italian text.
+          <br/><br/>
+          Stay tuned for the{" "}
+          <Link to="/blog/welcome">technical report</Link> on Minerva!
         </div>
-        <div className="row" style={{ marginTop: "2rem" }}>
+
+        <div style={{ textAlign: "center" }}>
+          <Heading as="h2" style={{ marginTop: "4rem" }}>Our Minerva Models</Heading>
+        </div>
+
+        <div className="row" style={{ marginTop: "2rem", justifyContent: "center" }}>
           {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+
+        <hr style={{ marginTop: "2rem" }} />
+
+        <div style={{ textAlign: "center" }}>
+          <Heading as="h2" style={{ marginTop: "4rem" }}>News about Minerva</Heading>
+        </div>
+        
+        <div className="row" style={{ marginTop: "2rem", justifyContent: "center" }}>
+          {NewsList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>

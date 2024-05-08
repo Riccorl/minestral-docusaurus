@@ -21,7 +21,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="https://huggingface.co/collections/sapienzanlp/minerva-llms-661e6011828fe67de4fe7961"
           >
-            Hugging Face 🤗
+            Available on Hugging Face 🤗
           </Link>
         </div>
       </div>
